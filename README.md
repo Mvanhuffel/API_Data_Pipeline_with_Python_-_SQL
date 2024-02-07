@@ -1,5 +1,6 @@
 # API Data Pipeline with Python, SQL, and dbt
 
+```ruby
 API_Pipeline_Python_SQL_dbt/
 │
 ├── README.md                   # Project overview and setup instructions
@@ -8,7 +9,7 @@ API_Pipeline_Python_SQL_dbt/
 │
 ├── .env.example                # Template for environment variables
 │
-├── .gitignore                  # Specifies intentionally untracked files to ignore
+├── .gitignore                  # Untracked files to ignore
 │
 ├── db/                         # Database-related scripts and schemas
 │   ├── init/                   # Initialization scripts for database setup
@@ -37,3 +38,4 @@ API_Pipeline_Python_SQL_dbt/
 ├── tests/                      # Test cases for the project
 │   ├── test_db.py              # Tests for database operations
 │   └── test_api.py             # Tests for API data fetching
+```ruby
