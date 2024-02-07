@@ -1,5 +1,5 @@
-import requests
 import pandas as pd
+import requests
 
 # Socrata Open Data API endpoint for the Citywide Payroll Data (Fiscal Year)
 DATA_URL = "https://data.cityofnewyork.us/resource/k397-673e.json"
@@ -13,27 +13,54 @@ def fetch_data(url):
         raise Exception(f"Failed to retrieve data: {response.status_code}")
 
 def main():
-    # Fetch data from API
     data = fetch_data(DATA_URL)
 
-    # Convert to pandas DataFrame
     df = pd.DataFrame(data)
 
-    # Display the first few rows of the dataframe
-    print("Head of the DataFrame:")
-    print(df.head())
+    # 1. Data profiling and summary
+    print("\n1. Data profiling and summary:")
+    print(df.info())
 
-    # DataFrame structure
-    print("\nDataFrame Structure:")
+    # 2. Data quality checks
+    print("\n2. Data quality checks:")
+
+    # Checking for missing values
+    print("\nChecking for missing values:")
+    print(df.isnull().sum())
+
+    # Checking for duplicate rows
+    print("\nChecking for duplicate rows:")
+    print(df.duplicated().sum())
+
+    # 3. Data distribution and uniqueness
+    print("\n3. Data distribution and uniqueness:")
+
+    # Displaying the number of unique values in each column
+    print(df.nunique())
+
+    # 5. Data type analysis
+    print("\n5. Data type analysis:")
     print(df.dtypes)
 
-    # DataFrame description for numeric columns
-    print("\nDataFrame Description:")
-    print(df.describe())
+    # 6. Sample data extraction
+    print("\n6. Sample data extraction:")
+    print(df.sample(5))
 
-    # DataFrame shape
-    print("\nDataFrame Shape:")
+    # 7. First few rows
+    print("\n7. First few rows:")
+    print(df.head())
+
+    # 8. Shape
+    print("\n8. Shape:")
     print(df.shape)
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
