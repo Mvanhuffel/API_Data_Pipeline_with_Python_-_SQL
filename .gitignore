@@ -1,2 +1,4 @@
 env_appsd
 api_data_pipeline
+db_config.py
+__pycache__

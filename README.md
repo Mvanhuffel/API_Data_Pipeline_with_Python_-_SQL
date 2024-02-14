@@ -1,5 +1,7 @@
 # API Data Pipeline with Python, SQL, and dbt
 
+*In Progress*
+
 ```ruby
 API_Pipeline_Python_SQL_dbt/
 │
@@ -25,13 +27,6 @@ API_Pipeline_Python_SQL_dbt/
 ├── src/                        # Source code for the project
 │   ├── config/                 # Configuration files and scripts
 │   │   └── db_config.py        # Database configuration settings
-│   │
-│   ├── utils/                  # Utility modules
-│   │   ├── logger.py           # Logging utility
-│   │   └── api_helpers.py      # Helpers for API requests
-│   │
-│   ├── models/                 # ORM models (if applicable)
-│   │   └── data_model.py       # Data models for ORM
 │   │
 │   └── main.py                 # Main script for running the data pipeline
 │

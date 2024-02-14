@@ -25,33 +25,33 @@ def main():
     print("\n2. Data quality checks:")
 
     # Checking for missing values
-    print("\nChecking for missing values:")
+    print("\n3. Checking for missing values:")
     print(df.isnull().sum())
 
     # Checking for duplicate rows
-    print("\nChecking for duplicate rows:")
+    print("\n4. Checking for duplicate rows:")
     print(df.duplicated().sum())
 
     # 3. Data distribution and uniqueness
-    print("\n3. Data distribution and uniqueness:")
+    print("\n5. Data distribution and uniqueness:")
 
     # Displaying the number of unique values in each column
     print(df.nunique())
 
     # 5. Data type analysis
-    print("\n5. Data type analysis:")
+    print("\n6. Data type analysis:")
     print(df.dtypes)
 
     # 6. Sample data extraction
-    print("\n6. Sample data extraction:")
+    print("\n7. Sample data extraction:")
     print(df.sample(5))
 
     # 7. First few rows
-    print("\n7. First few rows:")
+    print("\n8. First few rows:")
     print(df.head())
 
     # 8. Shape
-    print("\n8. Shape:")
+    print("\n9. Shape:")
     print(df.shape)
 
 if __name__ == "__main__":

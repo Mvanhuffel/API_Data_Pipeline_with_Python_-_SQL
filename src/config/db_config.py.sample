@@ -1,0 +1,8 @@
+# Sample database configuration settings
+DB_CONFIG = {
+    'host': 'PLACEHOLDER',
+    'database': 'PLACEHOLDER',
+    'user': 'PLACEHOLDER',
+    'password': 'PLACEHOLDER',
+    'port': 'PLACEHOLDER'
+}
