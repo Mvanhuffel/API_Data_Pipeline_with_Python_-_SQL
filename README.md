@@ -33,4 +33,4 @@ API_Pipeline_Python_SQL_dbt/
 ├── tests/                      # Test cases for the project
 │   ├── test_db.py              # Tests for database operations
 │   └── test_api.py             # Tests for API data fetching
-```ruby
+```
